@@ -18,5 +18,6 @@ sudo mysql -u root -p"$DATABASE_PASS" -e "FLUSH PRIVILEGES"
 sudo mysql -u root -p"$DATABASE_PASS" -e "create database accounts"
 sudo mysql -u root -p"$DATABASE_PASS" -e "grant all privileges on accounts.* TO 'admin'@'localhost' identified by 'admin123'"
 sudo mysql -u root -p"$DATABASE_PASS" -e "grant all privileges on accounts.* TO 'admin'@'%' identified by 'admin123'"
-sudo mysql -u root -p"$DATABASE_PASS" accounts < /tmp/vprofile-project/src/main/resources/db_backup.sql
+wget -O /tmp/accountsdb.sql https://raw.githubusercontent.com/hkhcoder/vprofile-project/awsliftandshift/src/main/resources/accountsdb.sql
+sudo mysql -u root -p"$DATABASE_PASS" accounts < /tmp/accountsdb.sql
 sudo mysql -u root -p"$DATABASE_PASS" -e "FLUSH PRIVILEGES"
