@@ -1,4 +1,4 @@
-## Project 3: Hosting and Running the Webapp Stack on AWS Cloud (Lift and Shift)
+## Hosting and Running the Webapp Stack on AWS Cloud (Lift and Shift)
 
 ## Overview
 This project focuses on hosting and running a web application stack on the AWS cloud by adopting a Lift and Shift approach. The goal is to migrate the existing infrastructure to AWS, leveraging its services to ensure scalability, flexibility, and cost-effectiveness while modernizing the stack.
